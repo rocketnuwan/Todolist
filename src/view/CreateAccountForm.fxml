@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root2" prefHeight="583.0" prefWidth="420.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateAccountFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="37.0" layoutY="37.0" prefHeight="49.0" prefWidth="353.0" style="-fx-background-color: #becaf8; -fx-background-radius: 10px;" text="Create New Account" textFill="#2828c5">
+         <font>
+            <Font name="Britannic Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="188.0" prefHeight="22.0" prefWidth="169.0" text="User Name          :" textFill="#0030f2">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" disable="true" layoutX="201.0" layoutY="183.0" prefHeight="30.0" prefWidth="186.0" promptText="Enter Name" />
+      <Label layoutX="42.0" layoutY="263.0" prefHeight="22.0" prefWidth="177.0" text="E - MaiL               :" textFill="#0030f2">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" disable="true" layoutX="202.0" layoutY="259.0" prefHeight="30.0" prefWidth="186.0" promptText="Enter Email" />
+      <Label layoutX="41.0" layoutY="333.0" prefHeight="22.0" prefWidth="177.0" text="New password      :" textFill="#0030f2">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="401.0" prefHeight="22.0" prefWidth="177.0" text="Confirm password :" textFill="#0030f2">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRegister" disable="true" layoutX="106.0" layoutY="470.0" mnemonicParsing="false" onAction="#btnRegisterOnAction" prefHeight="41.0" prefWidth="218.0" style="-fx-background-color: #2828c5;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="136.0" layoutY="519.0" onMouseClicked="#lblLoginAccountOnMouseClicked" prefHeight="20.0" prefWidth="162.0" text="Login Account" textFill="#2828c5">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <PasswordField fx:id="txtNewPassword" disable="true" layoutX="198.0" layoutY="330.0" prefHeight="30.0" prefWidth="186.0" promptText="Enter password" />
+      <PasswordField fx:id="txtConfirmPassword" disable="true" layoutX="198.0" layoutY="397.0" prefHeight="30.0" prefWidth="186.0" promptText="Enter password" />
+      <Button layoutX="166.0" layoutY="116.0" mnemonicParsing="false" onAction="#btnAddNewUserOnAction" prefHeight="41.0" prefWidth="218.0" style="-fx-background-color: #438917;" text="+Add new User" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblUserID" layoutX="98.0" layoutY="128.0" />
+      <Label fx:id="lblNewPassword" layoutX="269.0" layoutY="361.0" text="password does not match" textFill="RED">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblConfirmPassword" layoutX="269.0" layoutY="427.0" text="password does not match" textFill="RED">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="128.0" text="User ID :" />
+   </children>
+</AnchorPane>

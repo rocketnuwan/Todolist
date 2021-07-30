@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" prefHeight="579.0" prefWidth="417.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.192" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginPageFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="41.0" layoutY="39.0" prefHeight="41.0" prefWidth="335.0" style="-fx-background-color: #becaf8; -fx-background-radius: 10px;" text="Login to TO-DO List" textFill="#2828c5">
+         <font>
+            <Font name="Britannic Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="341.0" text="User Name :" textFill="#0030f2">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="396.0" text="Password   :" textFill="#0030f2">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="193.0" layoutY="341.0" promptText="Enter Name" />
+      <ImageView fitHeight="195.0" fitWidth="293.0" layoutX="61.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/133908320-concept-of-to-do-list-with-businessman.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="86.0" layoutY="454.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="41.0" prefWidth="237.0" style="-fx-background-color: #2828c5;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="126.0" layoutY="503.0" onMouseClicked="#lblCreateNewAccountOnMouseClicked" prefHeight="20.0" prefWidth="162.0" text="Create New Account" textFill="#2828c5">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <PasswordField fx:id="txtPassword" layoutX="193.0" layoutY="392.0" promptText="Enter Passwword" />
+   </children>
+</AnchorPane>
